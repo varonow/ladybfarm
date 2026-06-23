@@ -570,7 +570,7 @@ ul    { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 55%;
 }
 
 .page-hero-overlay {
@@ -605,17 +605,6 @@ ul    { list-style: none; }
   font-weight: 300;
   color: var(--slate-deep);
   letter-spacing: 0.01em;
-}
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  padding-bottom: clamp(2.5rem, 6vh, 4rem);
-  text-align: center;
-  color: var(--cream);
-  padding-inline: var(--gap);
 }
 
 .page-eyebrow {
