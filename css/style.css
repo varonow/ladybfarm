@@ -558,8 +558,8 @@ ul    { list-style: none; }
 
 .page-hero {
   position: relative;
-  height: 60vh;
-  min-height: 380px;
+  height: 75vh;
+  min-height: 500px;
   overflow: hidden;
   margin-top: var(--nav-h);
 }
