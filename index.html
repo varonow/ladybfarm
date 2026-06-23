@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lady B Willow Brook Farm — Hudson Valley, Est. 1838</title>
+  <meta name="description" content="A working family farm in the Hudson Valley since 1838. Heirloom tomatoes, heritage hens, and a long table by the fire.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION — logo left, hamburger right
+       ============================================= -->
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo-link" aria-label="Lady B Willow Brook Farm — Home">
+        <img src="images/logo-cream.png" alt="Lady B Willow Brook Farm" class="nav-logo">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       SIDE DRAWER MENU
+       ============================================= -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true" role="dialog" aria-label="Site navigation">
+    <div class="overlay-header">
+      <a href="index.html" aria-label="Home">
+        <img src="images/logo-cream.png" alt="Lady B Willow Brook Farm" class="overlay-logo">
+      </a>
+      <button class="nav-close" id="nav-close" aria-label="Close menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="overlay-nav">
+      <ul>
+        <li><a href="the-farm.html">The Farm</a></li>
+        <li class="overlay-group">
+          <span class="overlay-parent">Crops</span>
+          <ul class="overlay-sub">
+            <li><a href="crops/heirloom-tomatoes.html">Heirloom Tomatoes</a></li>
+            <li><a href="crops/apples-peaches.html">Apples &amp; Peaches</a></li>
+            <li><a href="crops/heritage-hens.html">Heritage Hens &amp; Eggs</a></li>
+            <li><a href="crops/tomato-recipes.html">Farm Tomato Recipes</a></li>
+          </ul>
+        </li>
+        <li><a href="stables.html">The Stables</a></li>
+        <li class="overlay-group">
+          <span class="overlay-parent">Gallery</span>
+          <ul class="overlay-sub">
+            <li><a href="gallery/spring-summer.html">Spring &amp; Summer</a></li>
+            <li><a href="gallery/fall-winter.html">Fall &amp; Winter</a></li>
+          </ul>
+        </li>
+        <li><a href="architecture.html">Architecture</a></li>
+        <li><a href="farm-map.html">Farm Map</a></li>
+        <li><a href="inquiries.html">Inquiries</a></li>
+      </ul>
+    </nav>
+    <p class="overlay-tagline">Hudson Valley, New York &nbsp;·&nbsp; Est. 1838</p>
+  </div>
+
+
+  <!-- =============================================
+       HERO
+       Image: images/hero-willow-pond.jpg  ← use 2.jpg
+       ============================================= -->
+  <section class="hero">
+    <div class="hero-image-wrap">
+      <img
+        src="images/hero-willow-pond.jpg"
+        alt="The willow pond at Lady B Willow Brook Farm in autumn"
+        class="hero-img"
+        fetchpriority="high"
+      >
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <!-- Using periwinkle filled logo — stands out against busy foliage -->
+      <img
+        src="images/logo-periwinkle.png"
+        alt="Lady B Willow Brook Farm"
+        class="hero-logo"
+      >
+      <p class="hero-tagline">A family farm retreat in the Hudson Valley</p>
+      <p class="hero-sub"><em>Where willows edge the brook</em></p>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       INTRO
+       ============================================= -->
+  <section class="intro">
+    <div class="container">
+      <p class="eyebrow">Est. 1838</p>
+      <h1 class="intro-heading">Lady B Willow Brook Farm</h1>
+      <div class="section-mark" aria-hidden="true">
+        <span class="section-mark-b">B</span>
+      </div>
+      <p class="intro-text">
+        Lady B Willow Brook Farm has stood in the Hudson Valley since 1838.
+        It is a working family farm and, more than that, the place our family
+        returns to — for the quiet, the seasons, and the work of the land.
+      </p>
+      <a href="the-farm.html" class="text-link">Read the story</a>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       PHOTO TRIO
+       Image 1: images/farmhouse-winter.jpg    ← use 1.jpg
+       Image 2: images/reflecting-pool.jpg     ← use 3.jpg
+       Image 3: images/great-room-fire.jpg     ← use 4.jpg
+       ============================================= -->
+  <section class="photo-trio" aria-label="Farm photographs">
+    <div class="photo-grid">
+
+      <figure class="photo-item">
+        <img src="images/farmhouse-winter.jpg" alt="The white farmhouse blanketed in snow" loading="lazy">
+        <figcaption>The Farmhouse &nbsp;·&nbsp; Winter</figcaption>
+      </figure>
+
+      <figure class="photo-item">
+        <img src="images/reflecting-pool.jpg" alt="The stone reflecting pool surrounded by autumn red leaves" loading="lazy">
+        <figcaption>The Reflecting Pool &nbsp;·&nbsp; Autumn</figcaption>
+      </figure>
+
+      <figure class="photo-item">
+        <img src="images/great-room-fire.jpg" alt="The timber great room with the stone fireplace lit" loading="lazy">
+        <figcaption>The Great Room &nbsp;·&nbsp; Winter</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       GALLERY TEASER
+       ============================================= -->
+  <section class="gallery-teaser">
+    <div class="container">
+      <p class="eyebrow eyebrow-light">Four Seasons</p>
+      <h2 class="gallery-teaser-heading">The Farm Through the Year</h2>
+      <a href="gallery/fall-winter.html" class="btn-outline">View the Gallery</a>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="index.html" aria-label="Home">
+        <img src="images/logo-cream.png" alt="Lady B Willow Brook Farm" class="footer-logo">
+      </a>
+      <p class="footer-tagline">Hudson Valley, New York &nbsp;·&nbsp; Est. 1838</p>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="the-farm.html">The Farm</a>
+        <a href="gallery/fall-winter.html">Gallery</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="inquiries.html">Inquiries</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Lady B Willow Brook Farm. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- =============================================
+       SCRIPTS
+       ============================================= -->
+  <script>
+    const nav      = document.getElementById('site-nav');
+    const hero     = document.querySelector('.hero');
+    const toggle   = document.getElementById('nav-toggle');
+    const overlay  = document.getElementById('nav-overlay');
+    const backdrop = document.getElementById('nav-backdrop');
+    const close    = document.getElementById('nav-close');
+
+    function updateNav() {
+      if (window.scrollY > hero.offsetHeight - 90) {
+        nav.classList.add('nav-solid');
+      } else if (!overlay.classList.contains('overlay-open')) {
+        nav.classList.remove('nav-solid');
+      }
+    }
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+
+    function openDrawer() {
+      overlay.classList.add('overlay-open');
+      backdrop.classList.add('overlay-open');
+      overlay.setAttribute('aria-hidden', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
+      nav.classList.add('nav-solid');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      overlay.classList.remove('overlay-open');
+      backdrop.classList.remove('overlay-open');
+      overlay.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      updateNav();
+    }
+
+    toggle.addEventListener('click', openDrawer);
+    close.addEventListener('click', closeDrawer);
+    backdrop.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && overlay.classList.contains('overlay-open')) closeDrawer();
+    });
+  </script>
+
+</body>
+</html>
