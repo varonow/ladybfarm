@@ -570,7 +570,7 @@ ul    { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 60%;
+  object-position: center 15%;
 }
 
 .page-hero-overlay {
@@ -583,7 +583,29 @@ ul    { list-style: none; }
   );
 }
 
-.page-title-wrap {
+/* Page title strip — sits below the hero on cream background */
+.page-header {
+  background: var(--cream);
+  padding: 3rem 0 0;
+  text-align: center;
+}
+
+.page-header .page-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--olive);
+  margin-bottom: 0.65rem;
+}
+
+.page-header .page-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 300;
+  color: var(--slate-deep);
+  letter-spacing: 0.01em;
+}
   position: absolute;
   inset: 0;
   display: flex;
