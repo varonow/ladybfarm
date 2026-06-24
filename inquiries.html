@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquiries — Lady B Willow Brook Farm</title>
+  <meta name="description" content="Lady B Willow Brook Farm is occasionally available as a location for film and photography. Inquire here.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Nav injected by js/nav.js -->
+  <div id="nav-placeholder"></div>
+
+  <!-- =============================================
+       PAGE HERO
+       Image: images/great-room-fire.jpg  ← use 4.jpg
+       ============================================= -->
+  <section class="page-hero">
+    <img
+      src="/images/great-room-fire.jpg"
+      alt="The timber great room with stone fireplace at Lady B Willow Brook Farm"
+      class="page-hero-img"
+      fetchpriority="high"
+    >
+    <div class="page-hero-overlay" aria-hidden="true"></div>
+  </section>
+
+  <!-- Page title strip -->
+  <div class="page-header">
+    <p class="page-eyebrow">Film &amp; Photography</p>
+    <h1 class="page-title">Inquiries</h1>
+  </div>
+
+
+  <!-- =============================================
+       INTRO TEXT
+       ============================================= -->
+  <section class="inquiries-intro">
+    <div class="section-mark" aria-hidden="true" style="margin-bottom: 2rem;">
+      <span class="section-mark-b">B</span>
+    </div>
+    <p class="inquiries-intro-text">
+      The farm is occasionally available as a location for film and photography.
+      For inquiries, please use the form below.
+    </p>
+  </section>
+
+
+  <!-- =============================================
+       CINEMATIC PHOTO SHOWCASE
+       Image 1: images/reflecting-pool.jpg   ← use 3.jpg
+       Image 2: images/farmhouse-winter.jpg  ← use 1.jpg
+       ============================================= -->
+  <div class="showcase-grid">
+    <figure class="showcase-item">
+      <img
+        src="/images/reflecting-pool.jpg"
+        alt="The stone reflecting pool surrounded by autumn leaves"
+        loading="lazy"
+      >
+      <figcaption>The Reflecting Pool &nbsp;·&nbsp; Autumn</figcaption>
+    </figure>
+    <figure class="showcase-item">
+      <img
+        src="/images/farmhouse-winter.jpg"
+        alt="The white farmhouse in deep winter snow"
+        loading="lazy"
+      >
+      <figcaption>The Farmhouse &nbsp;·&nbsp; Winter</figcaption>
+    </figure>
+  </div>
+
+
+  <!-- =============================================
+       CONTACT FORM — Netlify Forms
+       ============================================= -->
+  <section class="inquiries-form-section">
+    <div class="form-inner">
+      <p class="eyebrow" style="text-align:center;">Get in Touch</p>
+
+      <form
+        name="inquiries"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <!-- Netlify honeypot spam protection -->
+        <input type="hidden" name="form-name" value="inquiries">
+        <p style="display:none;">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone <span style="opacity:0.5; font-size:0.85em;">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+
+        <div class="form-group">
+          <label for="project">Tell us about your project</label>
+          <textarea id="project" name="project" required placeholder="Production type, dates, crew size, spaces of interest..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Send Inquiry</button>
+
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer injected by js/footer.js -->
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/footer.js"></script>
+
+</body>
+</html>
