@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You — Lady B Willow Brook Farm</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .thankyou-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--gap);
+      background: var(--cream);
+    }
+    .thankyou-logo {
+      width: 120px;
+      margin-bottom: 2.5rem;
+      opacity: 0.85;
+    }
+    .thankyou-heading {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 300;
+      color: var(--slate-deep);
+      margin-bottom: 1.25rem;
+    }
+    .thankyou-text {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--charcoal);
+      line-height: 1.85;
+      max-width: 440px;
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav injected by js/nav.js -->
+  <div id="nav-placeholder"></div>
+
+  <div class="thankyou-wrap">
+    <img src="/images/logo-periwinkle.png" alt="Lady B Willow Brook Farm" class="thankyou-logo">
+    <h1 class="thankyou-heading">Thank you.</h1>
+    <p class="thankyou-text">
+      We've received your inquiry and will be in touch shortly.
+    </p>
+    <div class="section-mark" aria-hidden="true" style="margin-bottom: 2rem;">
+      <span class="section-mark-b">B</span>
+    </div>
+    <a href="/" class="text-link">Return to the farm</a>
+  </div>
+
+  <script src="/js/nav.js"></script>
+
+</body>
+</html>
